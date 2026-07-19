@@ -76,3 +76,7 @@ Neben der grundlegenden Erfahrung in der Linux-Kommandozeile (Bash) und der Fehl
 
 **Ausfallsicherheit (Redundanz):** 
 Da der Pi-hole nun als einziger DNS-Server im Netzwerk fungiert (Single Point of Failure), führt ein Hardware- oder Stromausfall des Raspberry Pi unweigerlich zum Ausfall der Internetauflösung für alle Geräte im Netzwerk. In einem produktiven Firmennetzwerk würde ich zur Absicherung (Failover) zwingend einen zweiten DNS-Server (z.B. einen weiteren Pi-hole) aufsetzen, um Hochverfügbarkeit (High Availability) zu garantieren.
+
+Hinweis zur Dokumentation:
+
+Für die Strukturierung und sprachliche Ausformulierung dieser README sowie als Assistenz bei der Analyse der SSH-Verbindungsprobleme habe ich Google Gemini als Werkzeug genutzt. Die physische Einrichtung, Konfiguration des Netzwerks (Fritz!Box) und das Testen des Pi-holes erfolgten vollständig eigenständig.
