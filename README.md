@@ -45,6 +45,7 @@ Während des Setups wurden über die textbasierte Benutzeroberfläche (ncurses) 
 ![Upstream DNS Auswahl](<Screenshot 2026-07-19 195838.png>)
 
 **2. Integration der Standard-Blocklisten:**
+
 ![Blocklisten Integration](<Screenshot 2026-07-19 200250.png>)
 
 **3. Aktivierung des Query Loggings (Privacy Level 0), um geblockte Anfragen für Troubleshooting-Zwecke einsehen zu können:**
