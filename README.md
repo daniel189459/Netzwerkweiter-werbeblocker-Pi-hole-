@@ -30,29 +30,29 @@ Nach dem Boot-Vorgang wurde die IP-Adresse des Raspberry Pi über das Web-Interf
 
 Der folgende Screenshot zeigt den Troubleshooting-Prozess im Terminal bis zur finalen, erfolgreichen SSH-Authentifizierung (Trust on first use):
 
-![SSH Fehleranalyse und Login](versuch 1 (3).png)
+![SSH Fehleranalyse und Login](<versuch 1 (3).png>)
 
 ### Phase 3: Installation & Konfiguration von Pi-hole
 Nach erfolgreichem SSH-Login wurde die Installation von Pi-hole über das offizielle Shell-Skript gestartet:
 
 `curl -sSL https://install.pi-hole.net | bash`
 
-![Start der Pi-hole Installation](Screenshot 2026-07-19 195514_2.png)
+![Start der Pi-hole Installation](<Screenshot 2026-07-19 195514_2.png>)
 
 Während des Setups wurden über die textbasierte Benutzeroberfläche (ncurses) folgende Kern-Konfigurationen vorgenommen:
 
 **1. Zuweisung des Upstream DNS-Providers:**
-![Upstream DNS Auswahl](Screenshot 2026-07-19 195838_2.png)
+![Upstream DNS Auswahl](<Screenshot 2026-07-19 195838_2.png>)
 
 **2. Integration der Standard-Blocklisten:**
-![Blocklisten Integration](Screenshot 2026-07-19 200250_2.png)
+![Blocklisten Integration](<Screenshot 2026-07-19 200250_2.png>)
 
 **3. Aktivierung des Query Loggings (Privacy Level 0), um geblockte Anfragen für Troubleshooting-Zwecke einsehen zu können:**
-![Privacy Level Auswahl](Screenshot 2026-07-19 200517_2.png)
+![Privacy Level Auswahl](<Screenshot 2026-07-19 200517_2.png>)
 
 Die Installation wurde erfolgreich abgeschlossen und das Webinterface bereitgestellt:
 
-![Installation abgeschlossen](Screenshot 2026-07-19 200734_2.png)
+![Installation abgeschlossen](<Screenshot 2026-07-19 200734_2.png>)
 
 ### Phase 4: Netzwerkintegration (DHCP-Konfiguration)
 Damit nicht jedes Endgerät manuell konfiguriert werden muss, wurde der DHCP-Server des Routers (Fritz!Box) umgestellt. Folgende Schritte wurden durchgeführt:
@@ -63,7 +63,7 @@ Damit nicht jedes Endgerät manuell konfiguriert werden muss, wurde der DHCP-Ser
 4. **Den Pi-hole als DNS eintragen:** Austausch des standardmäßigen lokalen DNS-Servers (IP der Fritz!Box) durch die statische IP des Raspberry Pi (`192.168.178.108`).
 5. **Speichern und bestätigen:** Übernahme der Einstellungen im Router.
 
-![FritzBox DNS Konfiguration](Screenshot 2026-07-19 205356.png)
+![FritzBox DNS Konfiguration](<Screenshot 2026-07-19 205356.png>)
 
 Nach Erneuerung des DHCP-Leases (Re-Connect der Endgeräte) liefen alle DNS-Anfragen erfolgreich über den Pi-hole.
 
