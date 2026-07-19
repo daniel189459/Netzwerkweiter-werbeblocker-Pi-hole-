@@ -37,22 +37,22 @@ Nach erfolgreichem SSH-Login wurde die Installation von Pi-hole über das offizi
 
 `curl -sSL https://install.pi-hole.net | bash`
 
-![Start der Pi-hole Installation](<Screenshot 2026-07-19 195514_2.png>)
+![Start der Pi-hole Installation](<Screenshot 2026-07-19 195514.png>)
 
 Während des Setups wurden über die textbasierte Benutzeroberfläche (ncurses) folgende Kern-Konfigurationen vorgenommen:
 
 **1. Zuweisung des Upstream DNS-Providers:**
-![Upstream DNS Auswahl](<Screenshot 2026-07-19 195838_2.png>)
+![Upstream DNS Auswahl](<Screenshot 2026-07-19 195838.png>)
 
 **2. Integration der Standard-Blocklisten:**
-![Blocklisten Integration](<Screenshot 2026-07-19 200250_2.png>)
+![Blocklisten Integration](<Screenshot 2026-07-19 200250.png>)
 
 **3. Aktivierung des Query Loggings (Privacy Level 0), um geblockte Anfragen für Troubleshooting-Zwecke einsehen zu können:**
-![Privacy Level Auswahl](<Screenshot 2026-07-19 200517_2.png>)
+![Privacy Level Auswahl](<Screenshot 2026-07-19 200517.png>)
 
 Die Installation wurde erfolgreich abgeschlossen und das Webinterface bereitgestellt:
 
-![Installation abgeschlossen](<Screenshot 2026-07-19 200734_2.png>)
+![Installation abgeschlossen](<Screenshot 2026-07-19 200734.png>)
 
 ### Phase 4: Netzwerkintegration (DHCP-Konfiguration)
 Damit nicht jedes Endgerät manuell konfiguriert werden muss, wurde der DHCP-Server des Routers (Fritz!Box) umgestellt. Folgende Schritte wurden durchgeführt:
